@@ -192,5 +192,21 @@ if st.button("Mostrar histograma de condición vs año"):
     # mostramos el grafico
     st.plotly_chart(fig5)
 
+# Boton para mostrar el grafico de dispersion entre odometro y precio
+if st.button("Mostrar gráfico de dispersión entre odómetro y precio"):
+
+    # Gráfico de dispersión entre odómetro y precio
+    fig6 = go.Figure(data=go.Scatter(
+        x=df_vehicles['odometer'],
+        y=df_vehicles['price'],
+        mode='markers',
+        marker=dict(size=5, color='blue', opacity=0.5)
+    ))
+    fig6.update_layout(title='Relación entre Odómetro y Precio',
+                       xaxis_title='Odómetro',
+                       yaxis_title='Precio')
+    # mostramos el grafico
+    st.plotly_chart(fig6)
+
 # Finalizamos la aplicacion
 st.write("¡Gracias por usar la aplicación!")
