@@ -151,7 +151,7 @@ if st.button("Mostrar distribución de precios sin outliers"):
     st.plotly_chart(fig4)
 
 # boton para mostrar la distribucion de precios por fabricante sin outliers
-if st.button("Mostrar distribución de precios por fabricante"):
+if st.button("Mostrar distribución de precios por fabricante sin Outliers"):
 
     # Distribución de precios por fabricante sin outliers
     fig4b = go.Figure()
