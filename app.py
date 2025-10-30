@@ -41,7 +41,7 @@ df_vehicles.drop(columns=['model'], inplace=True)
 
 ''' Interfaz de Streamlit '''
 st.title("Proyecto Sprint 7 - Análisis Exploratorio de Datos")
-st.write("Análisis exploratorio de datos del conjunto de datos de vehículos en EE.UU.")
+st.write("Análisis exploratorio del conjunto de datos de vehículos en EE.UU.")
 
 select_all = st.checkbox("Seleccionar todos los vehiculos", value=True)
 
